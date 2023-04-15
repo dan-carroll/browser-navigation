@@ -1,4 +1,4 @@
-# browser-navigation
+# browser-navigation-examples
 Test and showcase differing current methods of browser navigation.
 
 ## index.html
