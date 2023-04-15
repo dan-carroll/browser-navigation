@@ -1,1 +1,10 @@
 /* my style sheet with nothing here yet */
+
+/* @import reset.css; */
+
+/* @import normalize.css; */
+
+h1 {
+    text-align: center;
+  }
+  
