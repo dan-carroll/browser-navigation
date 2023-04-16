@@ -10,6 +10,7 @@ header, footer {
 
 #page_footer {
     position: fixed;
+    padding: 1rem;
     left: 0;
     bottom: 0;
     width: 100%;
