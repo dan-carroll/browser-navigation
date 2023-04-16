@@ -1,6 +1,9 @@
 /* my style sheet with nothing here yet */
 
 
-body { text-align: center; }
+body {  }
 
-
+header {
+    display: block;
+    text-align: center;
+  }
