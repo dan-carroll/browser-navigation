@@ -22,7 +22,8 @@ header, footer {
 main h1, h2, h3, h4, h5, h6 { text-align: center; }
 
 #copyright {
-    text-align: center;
+    width: 100%
     position: absolute;
+    left: 0;
     bottom: 0;
 }
