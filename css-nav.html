@@ -19,11 +19,46 @@ title: CSS Nav page
 
     <link rel="stylesheet" href="css/style.css">
     <style>
+        /* Create navbar that is 992px wide */
+        /* With nav area 80% of navbar */
+        div.navbar {
+            float: left;
+            width: 992px;
+            height: 2rem;
+            margin: 0 auto 15px auto;
+            background-color: #dddddd;
+        }
+        .navbar .nav {
+            width: 80%;
+            background-color: inherit;
+        }
+
+        /* Create navbar that is 100% at 992px wide, or smaller */
+        /* With nav area 80% of navbar */
+        @media screen and (max-width: 992px) {
+            div.navbar {
+                width: 100%;
+            }
+        }
+
+        /* Create navbar that is 100% at 600px wide, or smaller */
+        /* With nav area 100% of navbar */
+        @media screen and (max-width: 600px) {
+            .navbar .nav {
+                width: 100%;
+            }
+        }
+
+        .logo {
+            display: inline;
+            padding-right: 1rem;
+        }
+
         ul {
           list-style-type: none;
           margin: 0;
           padding: 0;
-          background-color: #dddddd;
+          background-color: inherit;
         }
 
         li {
@@ -35,8 +70,9 @@ title: CSS Nav page
           display: block;
           text-decoration: none;
           padding: 8px;
-          background-color: #dddddd;
+          background-color: inherit;
         }
+
     </style>
   </head>
   <body>
@@ -45,16 +81,16 @@ title: CSS Nav page
 
     </header>
     <main>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
-      <div style="width: 1200px; height: 10rem; background-color: darkgoldenrod; margin: 20px 100px;">
-        <h2>NAVBAR</h2>
+      <div class="navbar">
+        <h2 class="logo">NAVBAR</h2>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
       </div>
     </main>
     {% include footer.html %}

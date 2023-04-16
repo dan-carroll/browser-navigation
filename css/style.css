@@ -1,5 +1,8 @@
 /* my style sheet with nothing here yet */
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
