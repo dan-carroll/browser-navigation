@@ -8,7 +8,7 @@ header, footer {
     text-align: center;
 }
 
-#footer {
+#page_footer {
     position: fixed;
     bottom: 0;
     width: 100%;
