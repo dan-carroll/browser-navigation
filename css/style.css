@@ -1,7 +1,6 @@
 /* my style sheet with nothing here yet */
 
 
-h1 {
-    text-align: center;
-  }
-  
+h1 { text-align: center; }
+
+#demo, #dateButton { margin: 0 auto; }
