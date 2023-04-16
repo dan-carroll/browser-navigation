@@ -18,3 +18,5 @@ header, footer {
     height: 80px;   /* Height of the footer */
     background: #98AFC7;
 }
+
+main h1, h2, h3, h4, h5, h6 { text-align: center; }
