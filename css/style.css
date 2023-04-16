@@ -9,6 +9,7 @@ header, footer {
 }
 
 #page_footer {
+    margin: 0;
     position: fixed;
     padding: 1rem;
     left: 0;
