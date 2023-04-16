@@ -20,23 +20,29 @@
     <header id="page_header">
     <h1>HTML 5 Navigation Examples</h1>
 
-    <button id="dateButton" type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-        Click me to display Date and Time.</button>
-    
-    <p id="demo"></p>
     </header>
     <main>
 
     </main>
     <footer id="page_footer">
+        <button id="dateButton" type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.</button>
         
+        <p id="demo"></p>
+        <p>
+            Copyright (c)2023 by Dan Carroll
+        </p>
+    
     </footer>
 
 	<script src="js/main.js">
 
         // Javascript test
 
-        document.getElementById("demo").innerHTML = "What is today's date?";
+        window.onload = (event) => {
+            document.getElementById("demo").innerHTML = "What is today's date?";
+        };
+        
     </script>
   </body>
 </html>

@@ -3,7 +3,7 @@
 
 body {  }
 
-header {
+header, footer {
     display: block;
     text-align: center;
   }
