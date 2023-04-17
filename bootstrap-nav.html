@@ -82,7 +82,7 @@
         </div>
       </nav>
     <header id="page_header">
-      <h1>Bootstrap 5 Navigation Example</h1>
+      <h1 class="my-5">Bootstrap 5 Navigation Example</h1>
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <span class="navbar-text">
@@ -100,6 +100,44 @@
             <summary>Bootstrap 5.3 NavBar Code</summary>
             <p>
                 The code for the navbar at the top of this page follows:
+<pre><code>
+    &lt;nav class="navbar navbar-expand-lg bg-body-tertiary"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+        &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+            &lt;ul class="navbar-nav me-auto mb-2 mb-lg-0"&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link active" aria-current="page" href="#"&gt;Home&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item dropdown"&gt;
+                &lt;a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+                Dropdown
+                &lt;/a&gt;
+            &lt;ul class="dropdown-menu"&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#">Something else here&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;form class="d-flex" role="search"&gt;
+            &lt;input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"&gt;
+            &lt;button class="btn btn-outline-success" type="submit"&gt;Search&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+              </code></pre>
             </p>
         </details>
         <hr>
