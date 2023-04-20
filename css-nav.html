@@ -14,6 +14,8 @@
     <meta property="og:description" content="A basic CSS navigation example.">
     <meta property="og:image" content="image.png">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -132,17 +134,38 @@
         }
 
         /* Style the search box inside the navigation bar */
-        nav input[type=text] {
+
+        nav .search-container {
             float: right;
+        }        
+
+        nav input[type=text] {
             padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
             border: none;
+        }
+
+        nav .search-container button {
+            float: right;
+            padding: 6px 10px;
             margin-top: 8px;
             margin-right: 16px;
+            background: #ddd;
             font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav .search-container button:hover {
+            background: #ccc;
         }
 
         @media screen and (max-width: 600px) {
-            nav a, nav input[type=text] {
+            nav .search-container {
+                float: none;
+            }
+            nav a, nav input[type=text], nav .search-container button {
                 float: none;
                 display: block;
                 text-align: left;
@@ -150,11 +173,11 @@
                 margin: 0;
                 padding: 14px;
             }
-            
             nav input[type=text] {
                 border: 1px solid #ccc;  
             }
-        }        
+        }
+
     </style>
   </head>
   <body>
@@ -232,7 +255,12 @@
             </div>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
-            <input type="text" placeholder="Search..">
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>            
         </nav>
       </div>
       <p>Added dropdown functionality to the News menu (navbar) item. Check
