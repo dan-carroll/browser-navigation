@@ -79,7 +79,7 @@
             float: left;
         }
 
-        li > a {
+        li > a, .dropbtn {
             display: inline-block;
             color: white;
             text-align: center;
@@ -87,11 +87,11 @@
             text-decoration: none;
         }
 
-        li > a:hover, .active {
+        li > a:hover, .active, .dropdown:hover .dropbtn {
             background-color: #111;
         }
 
-        nav > a {
+        nav > a, .dropbtn {
             display: inline-block;
             color: black;
             text-decoration: none;
@@ -99,11 +99,37 @@
             background-color: inherit;
         }
 
-        nav > a:hover, .active {
+        nav > a:hover, .active, .dropdown:hover .dropbtn {
             background-color: #666;
             color: white;
         }
 
+        li.dropdown, div.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
   </head>
   <body>
@@ -165,12 +191,19 @@
          .active class on a tab to identify the current page the user is on.
          And add other elements such as dropdowns and search bars.
       </p>
-      <h5>Full CSS Navbar</h5>
+      <h5>Full CSS Only Navbar</h5>
       <div id="navbar5" class="navbar float_bar primary_bar">
         <nav>
             <span class="logo">Navbar</span>
             <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">News</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </nav>
