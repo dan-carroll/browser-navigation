@@ -85,7 +85,7 @@
             text-decoration: none;
         }
 
-        li > a:hover {
+        li > a:hover, .active {
             background-color: #111;
         }
 
@@ -97,7 +97,7 @@
             background-color: inherit;
         }
 
-        nav > a:hover {
+        nav > a:hover, .active {
             background-color: #666;
             color: white;
         }
@@ -154,6 +154,23 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
           </ul>
+        </nav>
+      </div>
+      <h2>Positioning a Navbar</h2>
+      <p>
+        Place these CSS elements (position: fixed;, top: 0;, and width: 100%;)
+         in your top-most section whether it is a UL, DIV, or NAV tag. Set an
+         .active class on a tab to identify the current page the user is on.
+         And add other elements such as dropdowns and search bars.
+      </p>
+      <h5>Full CSS Navbar</h5>
+      <div id="navbar5" class="navbar float_bar primary_bar">
+        <nav>
+            <span class="logo">Navbar</span>
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         </nav>
       </div>
     </main>
