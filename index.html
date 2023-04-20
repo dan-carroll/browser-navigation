@@ -1,6 +1,3 @@
----
-title: Home page
----
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,8 +29,17 @@ title: Home page
         <h3>One of my <a href="https://dancarroll.pythonanywhere.com/" alt="Dan Carroll's Python Development page">working Bootstrap 5 Navigation pages</a></h3>
       </p>
     </main>
-    {% include footer.html %}
-
+    <footer id="page_footer">
+          <p id="demo">
+            placeholder
+          </p>
+          <button id="dateButton" type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+              Click me to display Date and Time.</button>
+          <p id="copyright">
+              Copyright &copy;2023 by Dan Carroll
+          </p>
+      
+      </footer>
 	<script>
 
         // Javascript test
