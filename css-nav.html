@@ -161,6 +161,21 @@
             background: #ccc;
         }
 
+        .menu {
+            display: flex;
+        }
+
+        input[type=checkbox] {
+            display: none;
+        } 
+
+        /* HAMBURGER MENU */
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            user-select: none;
+        }
+
         @media screen and (max-width: 600px) {
             nav .search-container {
                 float: none;
@@ -242,8 +257,11 @@
       </p>
       <h5>Full CSS Only Navbar</h5>
       <div id="navbar5" class="navbar float_bar primary_bar">
-        <nav>
-            <span class="logo">Navbar</span>
+        <div class="logo">Navbar</div>
+        <nav class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
             <a href="#home" class="active">Home</a>
             <div class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">News</a>
@@ -256,11 +274,12 @@
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
             <div class="search-container">
-                <form action="/action_page.php">
+                <form onsubmit="return false;">
                   <input type="text" placeholder="Search.." name="search">
                   <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
-            </div>            
+            </div>
+          </div>
         </nav>
       </div>
       <p>Added dropdown functionality to the News menu (navbar) item. Check
